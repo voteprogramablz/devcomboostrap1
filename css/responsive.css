@@ -1,0 +1,53 @@
+/* Colocando margem na esquerda dos botoes do slider em telas maiores que 768px (quando o display dele volta pra inline-block), para não ficarem tão próximos.
+Obs: mr-md-x n está funcionando.
+ */
+@media (min-width: 768px) {
+    .mr-botoes {
+        margin-left: 7px;
+    }
+}
+
+/* MAX WIDTH */
+/* Arrumando a margem dos nav-links em telas menores de 992px; */
+
+@media (max-width: 991.98px) {
+    #header .nav-link{
+        margin-left: 0px;   
+    }
+    #contato .email img {
+        width: 90px;
+        top: -40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #servicos a.destaque .img-container {
+        height: 120px;
+    }
+
+    #servicos a.destaque .img-container img {
+        max-height: 120px;
+    }
+    
+    #clientes .cliente-texto .imagem {
+        padding: 10px 0 30px 0;
+    }
+    #clientes .cliente-texto .imagem img {
+        max-width: 150px;
+    }
+
+    #contato .email {
+        padding: 60px 30px 50px 30px;
+    }
+    #contato .email form {
+        width: 100%;
+        flex-direction: column;
+    }
+    #contato .email .btn-footer {
+        margin-top: 10px;
+    }
+    #contato ul {
+        padding-top: 30px;
+        justify-content: center;
+    }
+}
